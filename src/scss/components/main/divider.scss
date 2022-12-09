@@ -1,0 +1,16 @@
+.co-vertical-divider {
+  height: 30px;
+  display: block;
+}
+
+.co-divider-line {
+  height: 0;
+  width: 100%;
+  border: 1px solid #F2F3F5;
+  display: block;
+  margin: 20px 0;
+
+  &--dark {
+    border-color: #BBBDC1;
+  }
+}

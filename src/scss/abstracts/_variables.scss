@@ -1,0 +1,42 @@
+// COLORS
+$primary-color: #00A79D;
+$secondary-color: #0C4258;
+$color-grey: #595D5E;
+$color-grey-dark: #1C1617;
+$color-light-grey: #707070;
+$color-light-grey-1: #f8f8f8;
+$color-light-grey-2: #F6F6F6;
+$color-light-grey-3: #E9E9E9;
+$color-light-grey-4: #F8F4E9;
+$color-white: #fff;
+$color-light: #dbdbdb;
+$color-dark: #202324;
+$color-blue: #0C4DA2;
+$color-yellow: #FFC107;
+$text-color: #2B3131;
+$text-color-1: #434549;
+$text-color-grey: #787A7D;
+$text-color-red: #DE2929;
+$text-color-green: #1DB02B;
+$color-light-green:#3EB562;
+$color-black: #000;
+
+// SPACING
+$section-gap: 100px;
+$section-background: #EEF4F4;
+
+// gradient
+$main-bg-gradient: linear-gradient(to bottom, $primary-color, $secondary-color);
+
+$main-border-radius: 6px;
+
+
+// ANIMATION
+$transition-type: all 0.4s ease-in-out;
+
+$main-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.06);
+
+$arrow-width: 120px;
+
+// FONTS
+$fontFamily: ReadexPro;

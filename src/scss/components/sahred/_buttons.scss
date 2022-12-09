@@ -1,0 +1,85 @@
+.btn {
+  border: 1px solid $primary-color;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &--primary {
+    background: $color-white;
+    color: #0C574F;
+    border-color: $color-white;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $color-white;
+      border-color: $primary-color;
+
+    }
+  }
+
+  &--secondary {
+    background: $primary-color;
+    color: $color-white;
+    border-color: $primary-color;
+
+    &:hover {
+      background-color: $color-white;
+      color: $primary-color;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      border-color: $primary-color;
+      background-color: $primary-color;
+      color: $color-white;
+    }
+  }
+
+  &--small {
+    padding: 9.5px 10px;
+  }
+
+  &--with-icon {
+    @include flex(center);
+    .icon {
+      margin-inline-end: 5px;
+    }
+  }
+
+  &--outline--white {
+    background-color: transparent;
+    border-color: $color-white;
+    color: $color-white;
+
+    &:hover {
+      border-color: $color-white;
+      background-color: $color-white;
+      color: $primary-color;
+    }
+  }
+
+  &--link {
+    &--primary {
+      font-size: rem(14);
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+
+  &--link {
+    font-size: rem(14);
+    font-weight: 600;
+    color: $primary-color;
+  }
+}
+
+.link {
+
+}
+

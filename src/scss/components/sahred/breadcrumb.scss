@@ -1,0 +1,29 @@
+.co-breadcrumb {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: $color-white;
+  @include flex(center, flex-start);
+
+  &__item {
+    @include flex(center, flex-start);
+
+    &:not(:last-child) {
+      margin-inline-end: 13px;
+      position: relative;
+
+
+      &::after {
+        @include addIcon($icon-arrow_Left_2, 16px);
+        transform: rotate(180deg);
+        display: block;
+        padding-inline-end: 13px;
+      }
+    }
+
+    &__link {
+      font-size: rem(14);
+      font-weight: 400;
+      display: block;
+    }
+  }
+}

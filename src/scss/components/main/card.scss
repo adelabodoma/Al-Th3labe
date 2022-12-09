@@ -1,0 +1,17 @@
+.co-card {
+  padding: 30px;
+  background-color: $color-white;
+  border-radius: $main-border-radius;
+
+
+  @include media-breakpoint-down(sm){
+    padding: 15px;
+  }
+
+  &__title {
+    font-size: rem(20);
+    font-weight: 400;
+    color: $text-color-1;
+    margin-bottom: 20px;
+  }
+}

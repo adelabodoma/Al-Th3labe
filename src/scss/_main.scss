@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+// ABSTRACT
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins",
+  "abstracts/custom";
+
+// BASE
+@import "base/rest", "base/base", "base/fonts", "base/typography", "base/rest",
+  "base/icon/style.scss";
+
+@import "abstracts/helpers";
+
+// COMPONENT
+@import "components/sahred/social-links", "components/sahred/scroll",
+"components/sahred/dropdown", "components/sahred/spinner",
+"components/sahred/buttons", "components/main/section-header",
+"components/main/card", "components/main/divider",
+'components/main/social', 'components/main/scroll-top',
+'components/sahred/slider', 'components/sahred/breadcrumb','components/main/pagination', 'components/sahred/form',
+'components/main/titles', 'components/sahred/search-box', 'components/sahred/table', 'components/sahred/mobile-menu';
+
+// PAGES
+@import "pages/home";
+
+// LAYOUT
+@import "layout/header", "layout/footer";

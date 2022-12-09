@@ -1,0 +1,30 @@
+.co-search {
+    @include flex(center, flex-start);
+
+    &__input {
+      flex: 8;
+      border-top-#{$right}-radius: 0;
+      border-bottom-#{$right}-radius: 0;
+      padding: 16px 20px;
+    }
+
+    &__button {
+      flex: 2;
+      border-top-#{$left}-radius: 0;
+      border-bottom-#{$left}-radius: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+
+      &__input {
+        border-radius: 6px;
+      }
+
+      &__button {
+        border-radius: 6px;
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+}

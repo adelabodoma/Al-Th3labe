@@ -1,0 +1,176 @@
+//https://codepen.io/tiffachoo/pen/yzZRXK
+
+$black: #252525;
+$white: #fff;
+$grey: #eaeaea;
+
+$primary-color: $primary-color;
+$primary-color-dark: darken($primary-color, 10%);
+$primary-color-tint-1: lighten($primary-color, 10%);
+$primary-color-tint-2: lighten($primary-color, 20%);
+$primary-color-tint-3: lighten($primary-color, 30%);
+$primary-color-tint-4: lighten($primary-color, 40%);
+$primary-color-tint-5: lighten($primary-color, 50%);
+
+$link-color: $primary-color;
+
+.nav-drill {
+  padding-top: 20px;
+  //   transform: translateX(100%);
+  #closeMenu {
+    position: absolute;
+    top: 10px;
+    #{$right}: 20px;
+    color: $primary-color;
+    .icon {
+      font-size: rem(25);
+    }
+  }
+}
+.nav-is-toggled {
+  .nav-drill {
+    transform: translateX(0);
+  }
+  &::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// ---------------------------------------
+// important stuff starts here
+
+$nav-width: 100%;
+$nav-padding: 0.875em 1em;
+$nav-border-color: $color-light-grey;
+$nav-background-color: $primary-color-tint-5;
+$nav-icon-font: "icomoon";
+$nav-icon-arrow-right: $icon-arrow_Left_2;
+$nav-icon-arrow-left: $icon-arrow_1 ;
+
+$nav-level-border-color: $primary-color;
+$nav-level-background-color: $primary-color-tint-5;
+
+$nav-level3-background-color: $primary-color-tint-4;
+$nav-level4-background-color: $primary-color-tint-3;
+$nav-level5-background-color: $primary-color-tint-2;
+
+.co-mobile-menu {
+  display: none;
+  .nav {
+    &-drill {
+      display: flex;
+      position: fixed;
+      z-index: 105;
+      top: 0;
+      right: 0;
+      width: $nav-width;
+      height: 100vh;
+      background-color: $nav-background-color;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      transition: 0.45s;
+    }
+
+    &-items {
+      flex: 0 0 100%;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        border-bottom: solid 1px #e1dada;
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: $nav-padding;
+      background-color: $nav-background-color;
+      color: $primary-color;
+      font-size: rem(16);
+      line-height: 1.5em;
+      font-weight: 400;
+    }
+
+    &-expand {
+      &-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(100%);
+        background-color: $nav-level-background-color;
+        transition: 0.3s;
+        visibility: hidden;
+        z-index: 99;
+
+        .nav-item {
+          &:not(:last-child) {
+            border-bottom: solid 1px $nav-level-border-color;
+          }
+        }
+
+        .nav-link {
+          background-color: $nav-level-background-color;
+        }
+
+        .nav-back-link {
+          display: flex;
+          align-items: center;
+          background-color: $primary-color !important;
+          color: $white;
+
+          &::before {
+            @include addIcon($nav-icon-arrow-right, 18px);
+            margin-inline-end: 0.5em;
+          }
+        }
+      }
+
+      &-link {
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+          @include addIcon($nav-icon-arrow-left, 18px);
+          transform: rotate(-90deg);
+        }
+      }
+
+      &.active {
+        > .nav-expand-content {
+          transform: translateX(0);
+          visibility: visible;
+        }
+      }
+
+      // quick example for other level colours
+      .nav-expand-content {
+        background-color: $nav-level-background-color;
+        .nav-link {
+          background-color: $nav-level-background-color;
+        }
+        .nav-expand-content {
+          background-color: $nav-level3-background-color;
+          .nav-link {
+            background-color: $nav-level3-background-color;
+          }
+          .nav-expand-content {
+            background-color: $nav-level4-background-color;
+            .nav-link {
+              background-color: $nav-level4-background-color;
+            }
+            .nav-expand-content {
+              background-color: $nav-level5-background-color;
+              .nav-link {
+                background-color: $nav-level5-background-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

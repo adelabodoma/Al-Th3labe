@@ -1,0 +1,33 @@
+.co-table {
+  width: 100%;
+
+  thead {
+    background-color: rgba(41, 84, 222, 0.05);
+    th {
+      padding: 15px;
+      font-size: rem(14);
+      font-weight: 600;
+    }
+  }
+
+  tbody {
+    tr {
+      &:not(:last-child){
+        border-bottom: 1px solid #F2F4F6
+      };
+
+      td {
+        padding: 15px;
+        font-size: rem(14);
+        font-weight: 500;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    width: 800px;
+    &-responsive {
+      overflow-x: auto;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.main {
+  margin-top: -82px;
+
+  @include media-breakpoint-down(sm){
+    margin-top: 20px;
+  }
+}
+
+
+.master {
+  min-height: 50vh;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0,0,0,.5);
+  z-index: 99;
+  display: none;
+
+
+  &__form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+
+    &__close {
+      font-size: rem(30);
+      color: $color-white;
+      position: absolute;
+      bottom: 100px;
+      #{$right}: -60px;
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    &__form {
+      width: 90%;
+
+      &__close {
+        bottom: unset;
+        top: -50px;
+        #{$right}: 0;
+      }
+    }
+  }
+}

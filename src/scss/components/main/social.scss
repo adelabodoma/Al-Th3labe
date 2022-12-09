@@ -1,0 +1,29 @@
+.co-social {
+  @include flex(center);
+
+  &__item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $color-white;
+    @include flex(center, center);
+    transition: $transition-type;
+
+    &__link {
+        color: $color-white;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: $primary-color;
+    }
+
+    &:not(:last-child){
+      margin-inline-end: 15px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.social-links {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    border-radius: 50%;
+    font-size: rem(15);
+    border: 1px solid $color-white;
+  }
+
+  &__item {
+    transition: $transition-type;
+    &:not(:last-child) {
+      .icon {
+        margin-#{$right}: 15px;
+      }
+    }
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &--dark {
+    .icon {
+      color:  $text-color;
+      border: 1px solid $text-color;
+    }
+  }
+}

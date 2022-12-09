@@ -1,0 +1,62 @@
+.heading {
+  &--1 {
+    font-size: rem(32);
+  }
+
+  &--2 {
+    font-size: rem(16);
+  }
+
+  &--3 {
+    font-size: rem(14);
+  }
+
+  &--3 {
+    font-size: rem(12);
+  }
+}
+
+.weight {
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--semi-bold {
+    font-weight: 600;
+  }
+
+  &--normal {
+    font-weight: 400;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--extra-light {
+    font-weight: 200;
+  }
+}
+
+
+.color {
+  &--primary {
+    color: $primary-color;
+  }
+
+  &--secondary {
+
+  }
+
+  &--text-grey {
+    color: $text-color-grey;
+  }
+
+  &--text-green {
+    color: $text-color-green;
+  }
+
+  &--text-red {
+    color: $text-color-red;
+  }
+}

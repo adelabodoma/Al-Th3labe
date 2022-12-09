@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style-rtl.min.css"/>
+    <title>SCA - Home</title>
+</head>
+
+<body>
+<button id="gotToTopButton" class="co-scroll-top" title="Go to top">
+    <i class="icon icon-arrow_dropdown"></i>
+</button>
+
+<div class="loader">
+    <div class="loader__item">
+        <img src="assets/images/Logo/White.png" alt="Logo"/>
+        <div></div>
+    </div>
+
+</div>
+<!-- HEADER SECTION START -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__nav-top">
+                    <a href="#" class="header__logo">
+                        <img src="assets/images/Logo/Full.png" alt="Logo">
+                    </a>
+
+                    <div class="header__language-switcher">
+                        <a href="#" class="header__language-switcher__link"
+                           type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span class="header__language-switcher__link__label">العربية</span>
+                            <i class="icon icon-arrow_dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="changeLang">
+                            <a class="dropdown-item" href="#">
+                                <span>عربي</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span>English</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__contact">
+                        <a href="#">
+                            دليل الاستخدام
+                        </a>
+                        <a href="#">
+                            تواصل معنا
+                        </a>
+                    </div>
+
+                    <div class="header__auth">
+                        <a href="" class="btn btn-outline-secondary">
+                            الاشتراك فى المنصة
+                        </a>
+                        <a href="" class="btn btn--secondary">
+                            سجل دخول
+                        </a>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav__items">
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link header__nav__items__item__link--active">الرئيسية</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link">عن المنصة</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link">خصائص تفسير الثعلبي</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link">المنهج العلمي للتحقيق</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link">موسوعة الثعلبي الإلكترونية</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link">موسوعة الثعلبي الصوتية</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link">بوابة البحث العلمي</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a href="" class="header__nav__items__item__link">التطبيقات الذكية</a>
+                        </li>
+                        <li class="header__nav__items__item">
+                            <a id="openSearchForm" href=""
+                               class="header__nav__items__item__link header__nav__items__item__link--search">
+                                <i class="icon icon-Search"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--                    <a id="openSearchFormMobile" href=""-->
+                    <!--                       class="header__nav__items__item__link header__nav__items__item__link&#45;&#45;search header__nav__items__item__link&#45;&#45;search&#45;&#45;mobile">-->
+                    <!--                        <i class="icon icon-Search"></i>-->
+                    <!--                    </a>-->
+
+                    <!--                    <div class="header__auth">-->
+                    <!--                        <button class="btn btn&#45;&#45;outline&#45;&#45;white">Create New Account</button>-->
+                    <!--                        <button class="btn btn&#45;&#45;primary">Login</button>-->
+                    <!--                    </div>-->
+                    <a href="" class="header__toggle" id="openMenu">
+                        <i class="icon icon-Menu header__toggle__icon"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="swiper header__swiper">
+                    <div class="header__swiper__container">
+                        <div class="header__swiper__slides">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider-inner">
+                                        <h2 class="header__swiper__title">About Sadat City</h2>
+                                        <p class="header__swiper__description">
+                                            Sadat City is a new Egyptian city of the first generation, established by
+                                            the New
+                                            Urban Communities Authority in North Sinai, affiliated to Menoufia
+                                            Governorate and
+                                            the capital of the Sadat Center.
+                                        </p>
+                                        <a href="" class="btn btn--secondary">
+                                            Know More
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-inner">
+                                        <h2 class="header__swiper__title">About Sadat City 2</h2>
+                                        <p class="header__swiper__description">
+                                            Sadat City is a new Egyptian city of the first generation, established by
+                                            the New
+                                            Urban Communities Authority in North Sinai, affiliated to Menoufia
+                                            Governorate and
+                                            the capital of the Sadat Center.
+                                        </p>
+                                        <a href="" class="btn btn--secondary">
+                                            Know More
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-inner">
+                                        <h2 class="header__swiper__title">About Sadat City 3</h2>
+                                        <p class="header__swiper__description">
+                                            Sadat City is a new Egyptian city of the first generation, established by
+                                            the New
+                                            Urban Communities Authority in North Sinai, affiliated to Menoufia
+                                            Governorate and
+                                            the capital of the Sadat Center.
+                                        </p>
+                                        <a href="" class="btn btn--secondary">
+                                            Know More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination header__swiper__pagination"></div>
+                        </div>
+
+                        <div class="header__swiper__navigation">
+                            <div class="swiper-button-prev header__swiper__navigation__item"></div>
+                            <div class="swiper-button-next header__swiper__navigation__item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="co-mobile-menu" id="mobileMenu">
+            <nav class="nav-drill">
+                <a href="#" id="closeMenu">
+                    <i class="icon icon-cancel"></i>
+                </a>
+                <ul class="nav-items nav-level-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> About </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#"> Services </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Service One </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    Category one
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#"> Media And Services </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Media And Services 1 </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    Media And Services 2
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Contact Us </a>
+                    </li>
+
+                    <li>
+                        <div class="p-3">
+                            <button class="btn btn--outline btn-block mb-2">Create New Account</button>
+                            <button class="btn btn--secondary btn-block">Login</button>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        </div>
+    </header>
+<!-- HEADER SECTION END -->
+
+<!-- SEARCH SECTION START -->
+<section class="search" id="searchForm">
+    <form action="" class="co-search search__form">
+        <input type="text" class="co-form-input co-search__input" placeholder="Books">
+        <a href="" class="btn btn--secondary co-search__button">Search Again</a>
+        <a href="">
+            <i class="icon icon-exit search__form__close" id="closeSearchForm"></i>
+        </a>
+    </form>
+</section>
+<!-- SEARCH SECTION START -->
+
+
+<!--  MAIN SECTION START   -->
+<main class="main">
+
+</main>
+    <!--  MAIN SECTION END   -->
+
+    <!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="" class="footer__logo">
+                <img src="assets/images/Logo/logo-white.png" alt="Logo">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav__items">
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Home</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Services</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">About</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="co-social">
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-instagram-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-twitter-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-linkedin-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-youtube"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__copy-rights">
+            All rights reserved @ Sadat Online 2022.
+        </div>
+    </div>
+</footer>
+    <!-- FOOTER SECTION END -->
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

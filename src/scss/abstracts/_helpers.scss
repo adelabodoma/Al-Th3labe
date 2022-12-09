@@ -1,0 +1,26 @@
+.m-b-20 {
+  margin-bottom: 30px;
+}
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
+
+.text-right {
+  text-align: #{$left};
+}
+
+.d-small-block{
+  @include media-breakpoint-down(sm){
+    display: block!important;
+    width: 100%;
+  }
+}
+
+.no-padding {
+  padding: 0!important;
+}

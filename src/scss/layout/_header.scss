@@ -1,0 +1,243 @@
+.header {
+  height: 100vh;
+
+  &__top {
+    padding: 30px 0;
+    background-color: $color-white;
+    color: $primary-color;
+    box-shadow: $main-box-shadow;
+
+
+    &__page-title {
+      font-size: rem(50);
+      font-weight: 600;
+      color: $text-color
+    }
+
+    @include media-breakpoint-down(sm) {
+      border-radius: 0;
+      padding: 15px 0;
+
+      &__page-title {
+        font-size: rem(25);
+      }
+    }
+  }
+
+  &__logo {
+    margin-inline-end: 60px;
+  }
+
+  &__nav {
+    @include flex(center);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #EEEEEE;
+
+    &__items {
+      @include flex(center);
+
+      &__item {
+        &__link {
+          color: #BBBDC1;
+          //font-size: rem(16);
+
+          &--search {
+            display: flex;
+
+            .icon {
+              font-size: rem(17);
+            }
+
+            &--mobile {
+              display: none;
+
+              @include media-breakpoint-down(md){
+                display: inline-block;
+              }
+            }
+          }
+
+          &--active {
+            color: $secondary-color
+          }
+        }
+
+        &:not(:last-child) {
+          margin-inline-end: 20px;
+        }
+
+        &__dropdown {
+          padding: 30px;
+          position: relative;
+          border-radius: 6px;
+
+          &__heading {
+            font-size: rem(18);
+            margin-bottom: 30px;
+          }
+
+          &__items  {
+            @include flex(center);
+            margin-bottom: 30px;
+
+            & > div:not(:last-child){
+              margin-inline-end: 40px;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: $color-white;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            top: -10px;
+            #{$left}: 20px
+          }
+        }
+      }
+    }
+
+    &-top {
+      @include flex(center, flex-start);
+    }
+
+    @include media-breakpoint-down(md) {
+      &__items {
+        display: none;
+      }
+    }
+  }
+
+  &__language-switcher {
+    margin-inline-end: auto;
+    margin-inline-start: 15px;
+
+    &__link {
+      @include flex(center);
+
+      &__label {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  &__toggle {
+    display: none;
+    margin-inline-start: 15px;
+
+    &__icon {
+      font-size: rem(40);
+    }
+
+    @include media-breakpoint-down(md) {
+      display: inline-block;
+    }
+  }
+
+  &__auth, &__contact {
+    .btn:not(:last-child), a:not(:last-child) {
+      margin-inline-end: 15px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &__contact {
+   margin-inline-end: 60px;
+  }
+
+  &__main {
+    height: calc(100vh - 193px); // 113 nav height + 80 main margin
+    @include flex(center);
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      height: calc(100vh - 76px); // 76 nav height
+    }
+  }
+
+  &__swiper {
+    &__container {
+      @include flex(center, space-between);
+    }
+
+    &__slides {
+      width: 600px;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    &__navigation {
+      position: relative;
+      display: block;
+      height: 50px;
+      width: 130px;
+      z-index: 9999;
+
+      &__item {
+        width: 40px;
+        height: 40px;
+        background-color: $color-white;
+        border-radius: 50%;
+        @include flex(center, center);
+        opacity: 1 !important;
+        z-index: 999;
+
+        &.swiper-button-disabled {
+          opacity: .7!important;
+        }
+
+        &::after {
+          font-size: rem(20);
+        }
+      }
+    }
+
+    &__pagination {
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      font-size: rem(32);
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: $color-white;
+    }
+
+    &__description {
+      font-size: rem(16);
+      font-weight: 300;
+      margin-bottom: 40px;
+      color: $color-white;
+      line-height: 26px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      &__navigation {
+        display: none;
+      }
+    }
+  }
+
+
+  &.internal-pages {
+    height: 323px;
+    margin-bottom: 80px;
+
+    @include media-breakpoint-down(sm){
+      height: 250px;
+    }
+  }
+
+  &.header-no-breadcrumb {
+    height: auto;
+    margin-bottom: 40px;
+    background-image: none;
+    background-color: transparent;
+  }
+}
