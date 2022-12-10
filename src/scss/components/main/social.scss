@@ -5,12 +5,13 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid $color-white;
+    border: 1px solid $primary-color;
     @include flex(center, center);
     transition: $transition-type;
 
     &__link {
-        color: $color-white;
+        color: $primary-color;
+      display: flex;
 
       &:hover {
         color: $primary-color;

@@ -1,44 +1,56 @@
 .footer {
-  background-color: $color-white;
-  padding: 30px;
   margin-top: 80px;
   color: $text-color;
+  border-top: 1px solid #EEEEEE;
+  padding-top: 60px;
 
-  &__top  {
-    @include flex(center, space-between);
-    border-bottom: 1px solid #434549;
-    padding-bottom: 25px;
-  }
-
-  &__nav {
-    &__items {
-      @include flex(center);
-
-      &__item {
-
-        &__link {
-          font-size: rem(14);
-          font-weight: 400;
-
-          &:hover {
-            color: $primary-color;
-          }
+  &__list {
+    &__downloads {
+      display: flex;
+      align-items: center;
+      a {
+        margin-inline-end: 10px;
+        height: 44px;
+        img {
+          height: 100%;
         }
+      }
+    }
+    &__item {
+      margin-bottom: 20px;
 
-        &:not(:last-child){
-          margin-inline-end: 20px;
+      &__link {
+        display: flex;
+        align-items: center;
+
+        i {
+          color: #3EB562;
+          font-size: rem(20);
+          margin-inline-end: 10px;
         }
       }
 
+      &:first-of-type{
+        font-size: rem(16);
+        font-weight: bold;
+      }
     }
+
   }
 
+  &__brief {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 24px;
+  }
 
   &__copy-rights {
-    color: #BBBDC1;
+    color: $color-white;
+    background-color: #151818;
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
     font-weight: 400;
+    margin-top: 60px;
   }
 
 
