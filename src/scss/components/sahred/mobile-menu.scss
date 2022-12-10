@@ -123,8 +123,10 @@ $nav-level5-background-color: $primary-color-tint-2;
           color: $white;
 
           &::before {
-            @include addIcon($nav-icon-arrow-right, 18px);
-            margin-inline-end: 0.5em;
+            @include addIcon($nav-icon-arrow-left, 18px);
+            transform: rotate(-90deg);
+            margin-bottom: -5px;
+            margin-inline-end: 5px;
           }
         }
       }
@@ -135,7 +137,7 @@ $nav-level5-background-color: $primary-color-tint-2;
 
         &::after {
           @include addIcon($nav-icon-arrow-left, 18px);
-          transform: rotate(-90deg);
+          transform: rotate(90deg);
         }
       }
 

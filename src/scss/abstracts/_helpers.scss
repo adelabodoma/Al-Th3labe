@@ -14,13 +14,19 @@
   text-align: #{$left};
 }
 
-.d-small-block{
-  @include media-breakpoint-down(sm){
-    display: block!important;
+.d-small-block {
+  @include media-breakpoint-down(sm) {
+    display: block !important;
     width: 100%;
   }
 }
 
+.d-small-none {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
 .no-padding {
-  padding: 0!important;
+  padding: 0 !important;
 }

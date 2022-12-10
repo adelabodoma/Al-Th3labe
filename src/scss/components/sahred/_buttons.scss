@@ -45,6 +45,10 @@
     padding: 9.5px 10px;
   }
 
+  &--big {
+    padding: 18px 58px;
+  }
+
   &--with-icon {
     @include flex(center);
     .icon {

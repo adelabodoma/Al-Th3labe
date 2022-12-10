@@ -12,4 +12,29 @@
   &--yellow {
     border-color: #F7941D;
   }
+
+  &-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $main-box-shadow;
+    @include flex(center, flex-start);
+    background-color: $color-white;
+    margin-bottom: 20px;
+
+    &__image {
+      margin-inline-end: 20px;
+    }
+
+    &__info {
+      &__heading {
+        font-size: rem(16);
+        margin-bottom: 3px;
+      }
+
+      &__label {
+        font-size: rem(14);
+        color: $primary-color;
+      }
+    }
+  }
 }

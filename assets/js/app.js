@@ -8,6 +8,29 @@ jQuery(document).ready(function ($) {
       el: "#testimonialsSwiper .swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+
   });
 
 
@@ -104,7 +127,7 @@ function mobileNavMenuRender() {
   const navExpand = [].slice.call(document.querySelectorAll(".nav-expand"));
   const backLink = `<li class="nav-item">
 	<a class="nav-link nav-back-link" href="javascript:;">
-		Back
+		رجوع
 	</a>
 </li>`;
 

@@ -7,7 +7,6 @@
     color: $primary-color;
     box-shadow: $main-box-shadow;
     position: relative;
-    z-index: 9;
 
     &__page-title {
       font-size: rem(50);
@@ -40,7 +39,7 @@
 
       &__item {
         &__link {
-          color: #BBBDC1;
+          color: $primary-color;
           //font-size: rem(16);
 
           &--search {
@@ -161,7 +160,7 @@
     background-size: cover;
 
     @include media-breakpoint-down(sm) {
-      height: calc(100vh - 76px); // 76 nav height
+      height: calc(100vh - 40px); // 40 nav height
     }
 
     &__heading {
@@ -196,70 +195,6 @@
     }
   }
 
-  &__swiper {
-    &__container {
-      @include flex(center, space-between);
-    }
-
-    &__slides {
-      width: 600px;
-      display: inline-block;
-      overflow: hidden;
-    }
-
-    &__navigation {
-      position: relative;
-      display: block;
-      height: 50px;
-      width: 130px;
-      z-index: 9999;
-
-      &__item {
-        width: 40px;
-        height: 40px;
-        background-color: $color-white;
-        border-radius: 50%;
-        @include flex(center, center);
-        opacity: 1 !important;
-        z-index: 999;
-
-        &.swiper-button-disabled {
-          opacity: .7!important;
-        }
-
-        &::after {
-          font-size: rem(20);
-        }
-      }
-    }
-
-    &__pagination {
-      margin-bottom: 50px;
-    }
-
-    &__title {
-      font-size: rem(32);
-      font-weight: 600;
-      margin-bottom: 15px;
-      color: $color-white;
-    }
-
-    &__description {
-      font-size: rem(16);
-      font-weight: 300;
-      margin-bottom: 40px;
-      color: $color-white;
-      line-height: 26px;
-    }
-
-    @include media-breakpoint-down(sm) {
-      &__navigation {
-        display: none;
-      }
-    }
-  }
-
-
   &.internal-pages {
     height: 323px;
     margin-bottom: 80px;
@@ -274,5 +209,56 @@
     margin-bottom: 40px;
     background-image: none;
     background-color: transparent;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__logo {
+      width: 200px;
+      margin-inline-end: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__language-switcher {
+      margin-inline-end: 0;
+      margin-inline-start: 0;
+    }
+
+    &__top {
+      &__container {
+        @include flex(center, flex-start);
+      }
+    }
+
+    &__main {
+      background-position: right;
+      padding-top: 0;
+
+      &__heading {
+        font-size: rem(40);
+      }
+
+      &__brief {
+        font-size: rem(16);
+        line-height: 30px;
+        margin-bottom: 20px;
+      }
+
+      &__apps {
+        margin-top: 20px;
+      }
+    }
+
+    &__nav {
+      padding-top: 0;
+      border: 0;
+      margin-top: 0;
+      &-top {
+        justify-content: space-between;
+
+      }
+    }
   }
 }
