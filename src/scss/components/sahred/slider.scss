@@ -5,11 +5,15 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background: #FFFFFF;
-  opacity: 0.3;
+  background: #EEEEEE;
+  opacity: 1;
+}
+
+.swiper-wrapper {
+  margin-bottom: 60px;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: $color-white;
+  background-color: $primary-color;
   opacity: 1;
 }

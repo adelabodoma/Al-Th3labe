@@ -1,13 +1,14 @@
 .co-testimonial {
   padding: 30px;
-  border-radius: $main-border-radius;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: $transition-type;
 
   &__text {
     font-size: rem(16);
     line-height: 26px;
     margin-bottom: 30px;
   }
-
 
   &__author {
     @include flex(center, flex-start);
@@ -47,5 +48,10 @@
       opacity: 0.15;
       color: $primary-color;
     }
+  }
+
+  &:hover {
+    border-color: $primary-color;
+    cursor: pointer;
   }
 }

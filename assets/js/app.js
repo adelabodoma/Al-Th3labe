@@ -1,18 +1,9 @@
 jQuery(document).ready(function ($) {
-  const sliderNx = document.querySelector(".slider .swiper-button-next");
-  const sliderPr = document.querySelector(".slider .swiper-button-prev");
-  const sliderPagination = document.querySelector(".post-slider .swiper-pagination");
-
-
-
   new Swiper("#testimonialsSwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     centeredSlides: false,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    navigation: false,
     pagination: {
       el: "#testimonialsSwiper .swiper-pagination",
       clickable: true,

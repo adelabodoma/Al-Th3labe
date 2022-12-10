@@ -1,8 +1,3 @@
-.main {
-
-}
-
-
 .master {
   min-height: 50vh;
 }
@@ -46,7 +41,6 @@
     }
   }
 }
-
 
 .statistics {
   margin: 100px 0;
@@ -94,5 +88,9 @@
 }
 
 .testimonial {
+  position: relative;
 
+  &__container {
+    overflow: hidden;
+  }
 }
