@@ -1,9 +1,26 @@
 .co-section-title {
-  font-size: rem(26);
+  font-size: rem(36);
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  width: fit-content;
+
+  &::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #f7941d;
+    top: 60px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   &-center {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+

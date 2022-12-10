@@ -1,0 +1,50 @@
+.co-testimonial {
+  padding: 30px;
+  border-radius: $main-border-radius;
+
+  &__text {
+    font-size: rem(16);
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+
+  &__author {
+    @include flex(center, flex-start);
+    position: relative;
+
+    &__icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $primary-color;
+      @include flex(center, center);
+      color: $color-white;
+      font-size: rem(25);
+    }
+
+    &__info {
+      margin-inline-start: 15px;
+
+      &__name {
+        font-size: rem(16);
+        font-weight: 500;
+        color: $primary-color;
+        margin-bottom: 5px;
+      }
+
+      &__job {
+        color: #6D7979;
+      }
+    }
+
+    &::after {
+      @include addIcon($icon-chat, 60px);
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      opacity: .1;
+    }
+  }
+}

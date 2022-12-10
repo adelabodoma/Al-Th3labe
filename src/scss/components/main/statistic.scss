@@ -1,0 +1,26 @@
+.co-statistic {
+  padding: 30px;
+  border-radius: $main-border-radius;
+  box-shadow: $main-box-shadow;
+  @include flex(center, flex-start);
+
+  &__icon {
+    color: #F7941D;
+    font-size: rem(50);
+    margin-inline-end: 30px;
+  }
+
+  &__info {
+    &__count {
+      color: $primary-color;
+      font-size: rem(36);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    &__label {
+      font-size: rem(16);
+      font-weight: 400;
+    }
+  }
+}

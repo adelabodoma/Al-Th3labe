@@ -6,7 +6,8 @@
     background-color: $color-white;
     color: $primary-color;
     box-shadow: $main-box-shadow;
-
+    position: relative;
+    z-index: 9;
 
     &__page-title {
       font-size: rem(50);
@@ -155,9 +156,43 @@
     height: calc(100vh - 193px); // 113 nav height + 80 main margin
     @include flex(center);
     position: relative;
+    background-image: url("../images/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include media-breakpoint-down(sm) {
       height: calc(100vh - 76px); // 76 nav height
+    }
+
+    &__heading {
+      font-size: rem(64);
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: $primary-color;
+    }
+
+    &__brief {
+      font-size: rem(20);
+      font-weight: 400;
+      margin-bottom: 40px;
+      line-height: 40px;
+    }
+
+    &__apps {
+      margin-top: 80px;
+
+      &__heading {
+        font-size: rem(20);
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+
+      &__links {
+        @include flex(center, flex-start);
+        a:first-child {
+          margin-inline-end: 20px;
+        }
+      }
     }
   }
 

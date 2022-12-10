@@ -1,9 +1,5 @@
 .main {
-  margin-top: -82px;
 
-  @include media-breakpoint-down(sm){
-    margin-top: 20px;
-  }
 }
 
 
@@ -49,4 +45,54 @@
       }
     }
   }
+}
+
+
+.statistics {
+  margin: 100px 0;
+}
+
+.encyclopedia {
+  padding: 100px 0;
+  background-color: #F6FFFE;
+  text-align: center;
+
+  &__header {
+    margin-bottom: 60px;
+
+    &__heading {
+      line-height: 30px;
+      margin-bottom: 30px;
+      font-size: rem(16);
+    }
+
+    &__heading-1 {
+      font-size: rem(20);
+    }
+  }
+}
+
+.about {
+  text-align: start;
+
+  &__container {
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: $main-box-shadow;
+    border-bottom: 10px solid $primary-color;
+    margin: 100px 0;
+  }
+
+  &__logo {
+    margin-bottom: 60px;
+  }
+
+  &__brief {
+    font-size: rem(16);
+    margin-bottom: 60px;
+  }
+}
+
+.testimonial {
+
 }
