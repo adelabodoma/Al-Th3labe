@@ -39,8 +39,7 @@
 
       &__item {
         &__link {
-          color: $primary-color;
-          //font-size: rem(16);
+          color: #6D7979;
 
           &--search {
             display: flex;
@@ -59,7 +58,7 @@
           }
 
           &--active {
-            color: $secondary-color
+            color: $primary-color;
           }
         }
 

@@ -78,12 +78,15 @@
   text-align: start;
   padding: 80px 0;
   margin: 100px 0;
+  background-image: url("../images/About/bg.png");
+  background-repeat: no-repeat;
+  background-position: 90% top;
 
   &__container {
 
-    background-image: url("../images/About/bg.png");
-    background-repeat: no-repeat;
-    background-position: right top;
+    //background-image: url("../images/About/bg.png");
+    //background-repeat: no-repeat;
+    //background-position: right top;
   }
 
   &__logo {
