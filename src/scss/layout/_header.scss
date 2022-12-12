@@ -14,7 +14,7 @@
       color: $text-color
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       border-radius: 0;
       padding: 15px 0;
 
@@ -141,7 +141,7 @@
       margin-inline-end: 15px;
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
@@ -158,8 +158,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include media-breakpoint-down(md) {
+      height: calc(100vh - 84px); // 40 nav height
+    }
+
     @include media-breakpoint-down(sm) {
-      height: calc(100vh - 40px); // 40 nav height
+      background-size: inherit;
     }
 
     &__heading {
@@ -210,7 +214,7 @@
     background-color: transparent;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     &__logo {
       width: 200px;
       margin-inline-end: 20px;
@@ -227,7 +231,7 @@
 
     &__top {
       &__container {
-        @include flex(center, flex-start);
+        @include flex(center, space-between);
       }
     }
 
